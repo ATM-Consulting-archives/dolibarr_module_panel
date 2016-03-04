@@ -12,7 +12,7 @@ function panel_set_link() {
 		
 		if(url.indexOf('action=delete')==-1 && url.indexOf("javascript:")==-1) {
 			url = "javascript:panel_open_panel('"+url+"')";
-			link = '&nbsp;<a href="'+url+'" class="open-panel" style="display:none;">P</a>';
+			link = '&nbsp;<a href="'+url+'" class="open-panel" style="display:none; "><?php echo img_object('OpenInPanel', 'panel@panel') ?></a>';
 			
 			$(this).after(link);
 			

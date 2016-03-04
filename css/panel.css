@@ -5,3 +5,13 @@ a.close-panel {
 	
 	display:block;	
 }
+
+a.open-panel {
+	height:12px; width:10px; overflow:visible;
+	
+}
+
+a.open-panel img {
+	height:12px;
+	width:12px;	
+}
