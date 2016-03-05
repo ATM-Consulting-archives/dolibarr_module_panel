@@ -51,7 +51,10 @@ function panel_open_panel(url) {
 				,'padding-left':'3px'
 				
 		});
-		$('body').css('padding-right', $('#panel-navigation').width());
+		$('body').css({
+			'padding-right': $('#panel-navigation').width()
+			,'position':'relative'
+		});
 	}
 
 	$('#panel-navigation>iframe').remove();
@@ -65,6 +68,13 @@ function panel_open_panel(url) {
 		}
 		,stop:function(event,ui) {
 			$('#panel-navigation>iframe').show();
+			 $('#panel-navigation').css({
+                                position : "absolute"
+                                ,top:0
+                                ,right:0
+                                ,'padding-left':'3px'
+
+                	});
 			$('body').css('padding-right', $('#panel-navigation').width());
 		}
 	});
