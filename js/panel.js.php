@@ -6,7 +6,7 @@
 ?>
 
 function panel_set_link() {
-	$('a[href]').each(function() {
+	$('#id-container a[href]').each(function() {
 		
 		var url = $(this).attr('href');
 		
