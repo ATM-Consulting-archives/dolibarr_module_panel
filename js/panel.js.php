@@ -46,7 +46,7 @@ function panel_open_panel(url) {
 				,width: w
 				,position : "absolute"
 				,top:0
-				,right:0
+				,left:$(document).width() - w
 				,'background-color':'#999'
 				,'padding-left':'3px'
 				
@@ -68,13 +68,6 @@ function panel_open_panel(url) {
 		}
 		,stop:function(event,ui) {
 			$('#panel-navigation>iframe').show();
-			 $('#panel-navigation').css({
-                                position : "absolute"
-                                ,top:0
-                                ,right:0
-                                ,'padding-left':'3px'
-
-                	});
 			$('body').css('padding-right', $('#panel-navigation').width());
 		}
 	});
